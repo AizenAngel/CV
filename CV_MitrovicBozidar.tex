@@ -1,7 +1,10 @@
+
 \documentclass[margin,center]{res}
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{breqn}
+\usepackage{graphicx}
+\usepackage{enumitem}
 \oddsidemargin -.5in
 \evensidemargin -.5in
 \textwidth=6.0in
@@ -11,96 +14,70 @@
 \topskip=0in
 
 \newenvironment{list1}{
-  \begin{list}{\ding{113}}{%
+  \begin{list}{$\bullet$}{
       \setlength{\itemsep}{0in}
-      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\parsep}{0in}
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in}
+      \setlength{\partopsep}{0in}
       \setlength{\leftmargin}{0.17in}}}{\end{list}}
-\newenvironment{list2}{
-  \begin{list}{$\bullet$}{%
-      \setlength{\itemsep}{0in}
-      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
-      \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
-
-    
 \begin{document}
-\name{\huge 
-  Božidar Mitrović  }
-
+\name{\huge Božidar Mitrović}
 \begin{figure}
 \hfill\smash{\includegraphics[height=2.5cm]{ja_round.png}}\vspace*{-1cm}
 \end{figure}
 
 \begin{resume}
-\section{PERSONAL INFORMATION}
-{ Email:    }   boza.mitrovic@gmail.com  \\ 
-\href{https://github.com/AizenAngel}{Github}, \href{https://www.linkedin.com/in/bo%C5%BEidar-mitrovi%C4%87-1a379991/}{LinkedIn}
 
-\section{EXPERIENCE} 
-\begin{list2}
-  \item{\bf Teaching assistant at Educational Centre "Korak Napred"}  \hfill Aug 2018 --\\
-    Teaching elementary and high school students math and programming and preparing them for competitions.
-  \item{\bf Teaching assistant at "SystemPro"}  \hfill Sep 2019 -- Dec 2021\\
-    Teaching elementary and high school students programming technologies 
-  \item{\bf YouTestMe Internship}  \hfill Oct 2019 -- Jan 2020\\
-    Gained experience with JSF and PrimeFaces 7.0 
-  \item{\bf Backend developer at Skylead} \hfill Oct 2021 -- Jun 2023\\
-    Gained experience in microservice architecture, Node.js, typescript...
-  \item{\bf Backend team lead at Skylead} \hfill Jun 2023 -- present\\
-    As a team lead in my current firm, I have cultivated leadership skills by effectively coordinating and guiding a group of professionals.
-\end{list2}
+\section{PERSONAL INFORMATION}
+Email: \href{mailto:boza.mitrovic@gmail.com}{boza.mitrovic@gmail.com} \\
+\href{https://github.com/AizenAngel}{GitHub}, \href{https://www.linkedin.com/in/bo%C5%BEidar-mitrovi%C4%87-1a379991/}{LinkedIn}
+
+\section{ABOUT ME}
+Computer science graduate with hands-on experience in developing full-stack applications using NodeJS, NestJS, Python, C++, Angular, and MySQL. Strong foundation in data structures, algorithms, and software architecture, gained through academic projects, professional experience, and personal projects. Passionate about building scalable, user-friendly systems and constantly improving through hackathons, summer schools, and continuous learning.
+
+\section{TECHNICAL SKILLS}
+\textbf{Languages:} Python, JavaScript, TypeScript, C++, SQL \\
+\textbf{Frameworks:} Node.js, NestJS, Angular, JSF, PrimeFaces \\
+\textbf{Databases:} MySQL, PostgreSQL, Redis, MongoDB \\
+\textbf{Tools:} Git, Docker, AWS (S3, SQS, SES) \\
+\textbf{Architecture:} Microservices, TDD, DDD, Hexagonal design, Event-driven
+
+\section{EXPERIENCE}
+\begin{list1}
+\item \textbf{Backend Team Lead, Skylead} \hfill Jun 2023 -- Present \\
+Led backend team, mentored junior developers, implemented scalable APIs and background jobs using NestJS, TDD, DDD, and AWS services.
+
+\item \textbf{Backend Developer, Skylead} \hfill Oct 2021 -- Jun 2023 \\
+Worked on microservices using Node.js, MySQL, Redis. Designed inter-service communication with queues and implemented caching strategies.
+
+\item \textbf{Backend Engineer Intern, YouTestMe} \hfill Oct 2019 -- Jan 2020 \\
+Built dynamic JSF-based web applications using PrimeFaces 7.0.
+
+\item \textbf{Freelance Backend Engineer, Upwork} \hfill Sep 2019 -- Sep 2021 \\
+Delivered MERN stack solutions under tight deadlines. Focused on API development and scalable app structure.
+
+\item \textbf{Programming Instructor, SystemPro} \hfill Sep 2019 -- Dec 2021 \\
+Taught programming to elementary and high school students, preparing them for competitions.
+\end{list1}
 
 \section{EDUCATION}
-{\bf Mathematical Grammar School} \hfill 2011 -- 2013\\
-{\bf Mathematical Grammar School} \hfill 2013 -- 2017\\
-{\bf University in Belgrade, Faculty of Mathematics}  \hfill 2017 -- 2021
+\textbf{University of Belgrade, Faculty of Mathematics} \hfill 2017 -- 2021 \\
+Major: Informatics \\
+\textbf{Mathematical Grammar School} \hfill 2013 -- 2017 \\
+\textbf{Mathematical Grammar School (7th–8th grade)} \hfill 2011 -- 2013
 
+\section{CERTIFICATES}
+\begin{list1}
+\item \textbf{NestJS Advanced Concepts} – NestJS Official \hfill Jan 2025
+\item \textbf{PSIML6 – Microsoft AI Camp} – Petnica Science Center \hfill Aug 2020
+\item \textbf{RTRK Summer School of C++} – Novi Sad, Serbia \hfill Aug 2020
+\item \textbf{Cambridge C2 Proficiency} \hfill Jun 2025
+\end{list1}
 
-\section{PROJECTS\\}
-\begin{list2}
-  \item{\bf Media Player} \hfill  Sep 2019\\
-    Music player application for Android OS, implemented in Android Studio.
-  \item{\bf Chat Application} \hfill Sep 2019\\
-    Chat application for Android OS, implemented in Android Studio.
-  \item{\bf AIBG 2.0} \hfill Aug 2019 -- Dec 2019 \\ 
-    Organizer of Artificial Intelligence Battle Ground hackaton (AIBG).
-  \item{\bf Statistical analysis of Titanic Dataset} \hfill April 2020\\
-    Written in R Studio.  
-  \item{\bf Face Recognition Software} \hfill June 2020\\
-    Jupyter Notebook application that recognizes faces. Written in Tensorflow.
-  \item{\bf Image Search Engine} \hfill Dec 2020 \\
-    Image Search Engine Implementation in Python.
-  \item{\bf FileBox}  \hfill Oct 2020 - Jan 2021\\
-    Client-Server application that simulates cloud service. Written in C++.
-  \item{\bf Analysis of \emph{The Office}} \hfill June 2021 \\
-    Analysis of characters on the popular sitcom \emph{The Office}. Writen in Python.
-  \item{\bf Buy\&Drive} \hfill March 2021 -- June 2021 \\
-    Client-Server application for selling cars. Gained experience with: Angular11, PostgreSQL, TailwindCSS
-
-\end{list2}
-
-\section{COURSES}
-\begin{list2}
-  \item {\bf PSIML6} \hfill August 2020\\
-    Petnica Summer Institute of Machine Learning (PSIML), where I
-    advanced my knowledge and understanding of Machine Learning
-    through intense all-day courses.
-
-  \item {\bf RTRK Summer School of C++} \hfill August 2020\\
-    Summer school, that gave me the opportunity to learn about the
-    most significant changes in C++ language through theoretical and
-    practical problems.
-
-\end{list2}
-
-
-\section{COMPETITIONS}
-\begin{list2}
-\item{\bf SUMA Hackaton} \hfill April 2021\\
-  Placed fourth on DataScience Hackaton organized by Student Union SUMA.
-\end{list2}
+\section{LANGUAGES}
+Serbian (native), English (C2 – Proficient)
 
 \end{resume}
 \end{document}
